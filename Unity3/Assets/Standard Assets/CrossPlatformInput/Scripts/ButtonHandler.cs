@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnitySampleAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.CrossPlatformInput
 {
