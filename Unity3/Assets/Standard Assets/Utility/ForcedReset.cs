@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnitySampleAssets.CrossPlatformInput;
 using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof (GUITexture))]

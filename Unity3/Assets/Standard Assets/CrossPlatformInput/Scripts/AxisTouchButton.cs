@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnitySampleAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.CrossPlatformInput
 {
@@ -19,17 +18,17 @@ namespace UnityStandardAssets.CrossPlatformInput
 
 		void OnEnable()
 		{
-			//if (!CrossPlatformInputManager.AxisExists(axisName))
-			//{
-			//	// if the axis doesnt exist create a new one in cross platform input
-			//	m_Axis = new CrossPlatformInputManager.VirtualAxis(axisName);
-			//	CrossPlatformInputManager.RegisterVirtualAxis(m_Axis);
-			//}
-			//else
-			//{
-			//	m_Axis = CrossPlatformInputManager.VirtualAxisReference(axisName);
-			//}
-			//FindPairedButton();
+			if (!CrossPlatformInputManager.AxisExists(axisName))
+			{
+				// if the axis doesnt exist create a new one in cross platform input
+				m_Axis = new CrossPlatformInputManager.VirtualAxis(axisName);
+				CrossPlatformInputManager.RegisterVirtualAxis(m_Axis);
+			}
+			else
+			{
+				m_Axis = CrossPlatformInputManager.VirtualAxisReference(axisName);
+			}
+			FindPairedButton();
 		}
 
 		void FindPairedButton()

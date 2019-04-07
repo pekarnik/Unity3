@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnitySampleAssets.CrossPlatformInput;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
